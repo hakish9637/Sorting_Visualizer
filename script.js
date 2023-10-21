@@ -77,8 +77,8 @@ sort_btn.addEventListener("click", function () {
         selectionSort(unsorted_array);
         break;
       case "quick":
-        console.log(unsorted_array.length);
-        quickSort(unsorted_array, 0, unsorted_array.length - 1);
+        let bars = document.getElementsByClassName("bar");
+        quickSort(unsorted_array, 0, unsorted_array.length - 1,bars);
         break;
       default:
         bubblesort(unsorted_array);
