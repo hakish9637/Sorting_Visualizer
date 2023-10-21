@@ -1,4 +1,5 @@
 async function merge(array, low, mid, high) {
+    // mergesort 
   let bars = document.getElementsByClassName("bar");
   let temp = [];
   let left = low;
