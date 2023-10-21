@@ -14,7 +14,7 @@ async function merge(array, low, mid, high) {
           temp.push(array[left]);
           left++;
       } else {
-          bars[right].style.backgroundColor = "Green";
+          bars[right].style.backgroundColor = "lightYellow";
           temp.push(array[right]);
           right++;
       }
@@ -33,20 +33,18 @@ async function merge(array, low, mid, high) {
             {
                 return;
             }
-      bars[right].style.backgroundColor = "Green";
+      bars[right].style.backgroundColor = "lightYellow";
       temp.push(array[right]);
       right++;
   }
 
-  // Assuming you want to visually represent the changes, you might want to add some delay here.
-  // For example:
   await sleep(150);
 
   // Copy elements of temp back to array
   for (let i = low; i <= high; i++) {
       array[i] = temp[i - low];
       bars[i].style.height = array[i] * heightFactor  + "px";
-      bars[i].style.backgroundColor = "blue"; // Resetting the color to default after sorting
+      bars[i].style.backgroundColor = "Green"; // Resetting the color to default after sorting
   }
 }
 

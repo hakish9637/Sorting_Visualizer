@@ -11,11 +11,6 @@ async function bubblesort(array)
                 return;
             }
             if(array[j] > array[j+1]){
-                for (let k = 0; k < bars.length; k++) {
-                    if (k !== j && k !== j + 1) {
-                      bars[k].style.backgroundColor = "aqua";
-                    }
-                  }
                 let temp = array[j];
                 array[j] = array[j+1];
                 array[j+1] = temp;
@@ -26,6 +21,7 @@ async function bubblesort(array)
                 await sleep(40);
             }
         }
+        bars[bars.length-1-i].style.background = 'green';
 
         await sleep(40);
     }

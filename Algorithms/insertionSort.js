@@ -20,6 +20,10 @@ async function insertionSort(array)
         j--;
         await sleep(30);
        }
+       // Highlight the sorted bars in blue
+       for (let k = 0; k <= i; k++) {
+        bars[k].style.backgroundColor = "green";
+    }
       await sleep(30);
     }
 
