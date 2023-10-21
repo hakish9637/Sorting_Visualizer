@@ -1,6 +1,6 @@
-let hasPressedStop = new Boolean(false);
 async function bubblesort(array)
 {
+    // bubbleSort
     let bars = document.getElementsByClassName("bar");
     for(let i=0;i<array.length;i++)
     {
