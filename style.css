@@ -30,16 +30,16 @@
 }
 
 body{
-    background-color: #2c3e50;
+    background-color: #121212;
 }
 
 .buttons_container > button{
     width: 200px;
     height: 30px;
-    background-color: #677685;
+    background-color:#fff;
     border: none;
     border-radius: 5px;
-    color: white;
+    color:#0d0606;
     font-size: 14px;
     cursor: pointer;
     transition:  0.2s ease-in-out;
@@ -49,10 +49,10 @@ body{
 #algo{
     width: 200px;
     height: 30px;
-    background-color: #677685;
+    background-color:#fff;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: #0d0606;
     font-size: 14px;
     cursor: pointer;
     transition:  0.2s ease-in-out;

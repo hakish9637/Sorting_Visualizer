@@ -16,6 +16,9 @@ async function partition(array,low,high)
        {
            while(array[i] <= pivot && i <= high-1)
               {
+                if(hasPressedStop == true){
+                  return;
+              }
                   i++;
                   bars[i].style.height = array[i] * heightFactor + "px";
                   bars[i].style.backgroundColor = "lightgreen";
@@ -23,6 +26,9 @@ async function partition(array,low,high)
               }
             while(array[j] > pivot && j >= low+1)
             {
+              if(hasPressedStop == true){
+                return;
+            }
                 j--;
                 bars[j].style.height = array[j] * heightFactor + "px";
                 bars[j].style.backgroundColor = "orange";
@@ -30,6 +36,9 @@ async function partition(array,low,high)
             }
             if(i<j)
               {
+                if(hasPressedStop == true){
+                  return;
+              }
                 let temp = array[i];
                 array[i] = array[j];
                 array[j] = temp;

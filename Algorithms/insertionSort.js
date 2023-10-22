@@ -1,15 +1,14 @@
 async function insertionSort(array)
 {
-  if(hasPressedStop == true)
-   {
-       return;
-   }
     let bars = document.getElementsByClassName("bar");
     for(let i=0;i<array.length;i++)
     {
        let j= i;
        while(j > 0 && array[j-1] > array[j])
        {
+        if(hasPressedStop==true){
+          return;
+      }
         let temp = array[j-1];
         array[j-1] = array[j];
         array[j] = temp;

@@ -14,13 +14,13 @@ async function selectionSort(array) {
         bars[mini].style.height = array[mini] * heightFactor + "px";
         bars[mini].style.backgroundColor = "lightGreen";
         bars[i].style.height = array[i] * heightFactor + "px";
-        bars[i].style.backgroundColor = "Blue"; // Highlight the already sorted bar with blue color
+        bars[i].style.backgroundColor = "Green"; // Highlight the already sorted bar with blue color
         await sleep(30);
     }
 
     // After the sorting is done, you can set the color of all the bars to blue to indicate completion
     for (let k = 0; k < array.length; k++) {
-        bars[k].style.backgroundColor = "Blue";
+        bars[k].style.backgroundColor = "Green";
         await sleep(30);
     }
 
