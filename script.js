@@ -67,9 +67,6 @@ sort_btn.addEventListener("click", function () {
        let n = unsorted_array.length;
        mergesort(unsorted_array,0,n-1);
         break;
-      case "heap":
-        HeapSort(unsorted_array);
-        break;
       case "insertion":
         insertionSort(unsorted_array);
         break;
@@ -80,6 +77,9 @@ sort_btn.addEventListener("click", function () {
         let bars = document.getElementsByClassName("bar");
         quickSort(unsorted_array, 0, unsorted_array.length - 1,bars);
         break;
+      case "heap":
+          let m = unsorted_array.length;
+          heapSort(unsorted_array,m);
       default:
         bubblesort(unsorted_array);
         break;
